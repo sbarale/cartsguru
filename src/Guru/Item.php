@@ -12,15 +12,15 @@ namespace Guru {
      * Class Item
      *
      * @package Guru
-     * @method id               // SKU or product id
-     * @method label            // Designation
-     * @method quantity         // Count
-     * @method totalATI         // Total price included taxes
-     * @method totalET          // Total price excluded taxes
-     * @method url              // URL of product sheet
-     * @method imageUrl         // Image URL of product, size should be min 150*150, max 180*180
-     * @method universe         // Main category of the product 					(optional)
-     * @method category         // Sub category of the product 					(optional)
+     * @method Item id               // SKU or product id
+     * @method Item label            // Designation
+     * @method Item quantity         // Count
+     * @method Item totalATI         // Total price included taxes
+     * @method Item totalET          // Total price excluded taxes
+     * @method Item url              // URL of product sheet
+     * @method Item imageUrl         // Image URL of product, size should be min 150*150, max 180*180
+     * @method Item universe         // Main category of the product 					(optional)
+     * @method Item category         // Sub category of the product 					(optional)
      */
     class Item extends AbstractElement
     {
