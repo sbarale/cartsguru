@@ -15,9 +15,9 @@
  * + Languages: EN, FR
  */
 
-require_once (dirname(__FILE__) . '/CartsGuruRAPI.php');
+require_once (dirname(__FILE__) . '/Guru/CartsGuruRAPI.php');
 
-class CartsGuru
+class CartsGuruExample
 {
     const AUTH_KEY = 'YOUR_AUTH_KEY';
     const SITE_ID = 'YOUR_SITE_ID';
@@ -37,7 +37,7 @@ class CartsGuru
     
     private function adaptOrder($order){
         $order_mapped = array(
-            'id' => (string) $cart->id
+            'id' => (string) $order->id
             //TODO: Do the mapping according to carts guru documentation
         );
         return $order_mapped;
@@ -60,7 +60,7 @@ class CartsGuru
      */
     public function doCall($path, $data, $sync = false)
     {
-        $api = new CartGuruRAPI(self::AUTH_KEY);
+        $api = new Guru\CartGuruRAPI(self::AUTH_KEY);
         return $api->post($path, $data, $sync);
     }
 }
