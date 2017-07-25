@@ -20,8 +20,8 @@ namespace Guru {
     class CartGuruRAPI
     {
         public $options;
-public $handle;
-public $response; // cURL resource handle.
+        public $handle;
+        public $response; // cURL resource handle.
 
         // Populated after execution:
         public $headers; // Response body.
@@ -30,7 +30,7 @@ public $response; // cURL resource handle.
         public $decoded_response; // Response error string.
 
         // Populated as-needed.
-                private $auth_key; // Decoded response body.
+        private $auth_key; // Decoded response body.
 
         public function __construct($auth_key, $options = [])
         {
