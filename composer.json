@@ -7,6 +7,10 @@
       "email": "sebasinar@gmail.com"
     }
   ],
-
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  },
   "require": {}
 }
