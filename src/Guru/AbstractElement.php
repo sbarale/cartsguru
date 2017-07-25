@@ -11,7 +11,7 @@ namespace Guru {
 
     abstract class AbstractElement
     {
-        //Details of each items
+        // Define the fieds in the subclass
 
         // protected $id       = ""; // SKU or product id
         // protected $label    = "";        // Designation
@@ -23,10 +23,6 @@ namespace Guru {
         // protected $universe = "";            // Main category of the product 					(optional)
         // protected $category = "";        // Sub category of the product 					(optional)
 
-        public function __set($key, $value)
-        {
-            $this->$key = $value;
-        }
 
         public function get($object = null)
         {
@@ -37,6 +33,20 @@ namespace Guru {
 
             return $retval;
         }
+
+        /**
+         * @param $name
+         * @param $arguments
+         * @return $this
+         */
+        public function __call($name, $arguments)
+        {
+            $this->$name = $arguments[0];
+
+            return $this;
+        }
+
+
     }
 
 }
