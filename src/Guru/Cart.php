@@ -5,27 +5,27 @@ namespace Guru {
      * Class Cart
      *
      * @package Guru
-     * @method $siteId               // SiteId is part of configuration
-     * @method $id                   // Cart reference
-     * @method $creationDate         // Date of the cart as string in json format (2016-07-26T08:21:25.689Z)
+     * @method Cart siteId               // SiteId is part of configuration
+     * @method Cart id                   // Cart reference
+     * @method Cart creationDate         // Date of the cart as string in json format (2016-07-26T08:21:25.689Z)
      *            (optional)
-     * @method totalATI              // Total price including taxes
-     * @method totalET               // Total price excluding taxes
-     * @method currency             // Currency, ISO code 						(optional)
-     * @method accountId            // Account id of the buyer (we advise to use the email address)
-     * @method ip                   // Visitor IP address 						(optional)
-     * @method recoverUrl           // Link to recover the cart (link to cart with security token included)
+     * @method Cart totalATI              // Total price including taxes
+     * @method Cart totalET               // Total price excluding taxes
+     * @method Cart currency             // Currency, ISO code 						(optional)
+     * @method Cart accountId            // Account id of the buyer (we advise to use the email address)
+     * @method Cart ip                   // Visitor IP address 						(optional)
+     * @method Cart recoverUrl           // Link to recover the cart (link to cart with security token included)
      *         (optional)
-     * @method civility             // Use string in this list : 'mister','madam','miss' 			(optional)
-     * @method lastname             // Lastname 							(optional)
-     * @method firstname            // Firstname
-     * @method email                // Email address
-     * @method homePhoneNumber      // Landline phone number 						(optional)
-     * @method mobilePhoneNumber    // Mobile phone number						(optional)
-     * @method phoneNumber          // Phone number of buyer, if you don’t know the kind of it 		(optional)
-     * @method country              // Country of the buyer (you can send country or country code)
-     * @method countryCode          // Country ISO code of the buyer (you can send country or country code)
-     * @method custom            // Any custom fields you want to send with the cart. Standard fields are language
+     * @method Cart civility             // Use string in this list : 'mister','madam','miss' 			(optional)
+     * @method Cart lastname             // Lastname 							(optional)
+     * @method Cart firstname            // Firstname
+     * @method Cart email                // Email address
+     * @method Cart homePhoneNumber      // Landline phone number 						(optional)
+     * @method Cart mobilePhoneNumber    // Mobile phone number						(optional)
+     * @method Cart phoneNumber          // Phone number of buyer, if you don’t know the kind of it 		(optional)
+     * @method Cart country              // Country of the buyer (you can send country or country code)
+     * @method Cart countryCode          // Country ISO code of the buyer (you can send country or country code)
+     * @method Cart custom            // Any custom fields you want to send with the cart. Standard fields are language
      *         (ISO code), customerGroup and isNewCustomer (Boolean).
      */
     class Cart extends AbstractElement
