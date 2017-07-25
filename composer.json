@@ -1,0 +1,12 @@
+{
+  "name": "sbarale/cartsguru",
+  "description": "https://carts.guru php api",
+  "authors": [
+    {
+      "name": "Sebastian Barale",
+      "email": "sebasinar@gmail.com"
+    }
+  ],
+
+  "require": {}
+}
