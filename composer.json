@@ -7,6 +7,7 @@
       "email": "sebasinar@gmail.com"
     }
   ],
+  "minimum-stability": "dev",
   "autoload": {
     "classmap": [
       "src/"
