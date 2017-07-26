@@ -164,7 +164,7 @@ namespace Guru {
 
         public function parseResponse($response)
         {
-            $this->raw_response = $response;
+            $this->raw_response = clone($response);
             $headers            = [];
             $http_ver           = strtok($response, "\n");
 
