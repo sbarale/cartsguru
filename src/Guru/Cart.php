@@ -33,7 +33,7 @@ namespace Guru {
      * @method Cart custom($custom)           // Any custom fields you want to send with the cart. Standard fields are
      *         language
      *         (ISO code), customerGroup and isNewCustomer (Boolean).
-     * @method Cart items($items)
+     * @method Cart items[]($items[])                       // Details of each items
      */
     class Cart extends AbstractElement
     {
