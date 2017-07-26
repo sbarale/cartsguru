@@ -15,13 +15,15 @@
  * + Languages: EN, FR
  */
 
+use Guru\Item;
+
 require_once (dirname(__FILE__) . '/Guru/CartsGuruRAPI.php');
 
 class CartsGuruExample
 {
     const AUTH_KEY = 'YOUR_AUTH_KEY';
     const SITE_ID = 'YOUR_SITE_ID';
-    
+
     private function adaptCart($cart){
         $cart_mapped = array(
             'siteId' => self::SITE_ID, 
