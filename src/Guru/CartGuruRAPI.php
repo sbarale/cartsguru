@@ -22,6 +22,7 @@ namespace Guru {
         public $options;
         public $handle;
         public $response; // cURL resource handle.
+        public $raw_response;
 
         // Populated after execution:
         public $headers; // Response body.
@@ -163,8 +164,9 @@ namespace Guru {
 
         public function parseResponse($response)
         {
-            $headers = [];
-            // $http_ver = strtok($response, "\n");
+            $this->raw_response = $response;
+            $headers            = [];
+            $http_ver           = strtok($response, "\n");
 
             while ($line = strtok("\n")) {
                 if (strlen(trim($line)) == 0) {
