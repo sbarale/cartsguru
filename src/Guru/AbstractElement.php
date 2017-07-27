@@ -49,13 +49,15 @@ namespace Guru {
              * already.
              */
             $data = $arguments[0];
-            if (!is_null($data) && !empty($data)) {
+            if (is_null($data) || empty($data)) {
+                return $this;
+            } else {
                 $this->$name = $arguments[0];
+
             }
 
             return $this;
         }
-
 
     }
 
