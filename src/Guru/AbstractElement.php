@@ -41,7 +41,17 @@ namespace Guru {
          */
         public function __call($name, $arguments)
         {
-            $this->$name = $arguments[0];
+            /*
+             * If the value passed is empty or null, let's not add it to the array
+             * that way we can pass everything that comes in from the page and the
+             * object will handle it properly so when it sends to Cart Guru's API,
+             * it doesn't send empty values and overrides whatever has been stored
+             * already.
+             */
+            $data = $arguments[0];
+            if (!is_null($data) && !empty($data)) {
+                $this->$name = $arguments[0];
+            }
 
             return $this;
         }
