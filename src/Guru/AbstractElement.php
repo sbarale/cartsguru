@@ -28,7 +28,9 @@ namespace Guru {
         {
             $retval = [];
             foreach ($this as $property_name => $property_value) {
-                $retval[$property_name] = $property_value;
+                if (!is_null($property_value) && !empty($property_value)) {
+                    $retval[$property_name] = $property_value;
+                }
             }
 
             return $retval;
