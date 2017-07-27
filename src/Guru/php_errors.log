@@ -70,3 +70,9 @@ Stack trace:
 [27-Jul-2017 09:05:11 America/New_York] PHP   3. Boris\Boris->start() phar:///usr/local/bin/boris/bin/boris:15
 [27-Jul-2017 09:05:11 America/New_York] PHP   4. Boris\EvalWorker->start() phar:///usr/local/bin/boris/lib/Boris/Boris.php:171
 [27-Jul-2017 09:05:11 America/New_York] PHP   5. eval() phar:///usr/local/bin/boris/lib/Boris/EvalWorker.php:133
+[27-Jul-2017 09:10:33 America/New_York] PHP Parse error:  syntax error, unexpected '1' (T_LNUMBER), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in phar:///usr/local/bin/boris/lib/Boris/EvalWorker.php(133) : eval()'d code on line 1
+[27-Jul-2017 09:10:33 America/New_York] PHP Stack trace:
+[27-Jul-2017 09:10:33 America/New_York] PHP   1. {main}() /usr/local/bin/boris:0
+[27-Jul-2017 09:10:33 America/New_York] PHP   2. require() /usr/local/bin/boris:10
+[27-Jul-2017 09:10:33 America/New_York] PHP   3. Boris\Boris->start() phar:///usr/local/bin/boris/bin/boris:15
+[27-Jul-2017 09:10:33 America/New_York] PHP   4. Boris\EvalWorker->start() phar:///usr/local/bin/boris/lib/Boris/Boris.php:171
