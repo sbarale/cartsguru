@@ -1,0 +1,72 @@
+[27-Jul-2017 08:45:37 America/New_York] PHP Fatal error:  Class 'Guru\AbstractElement' not found in /Volumes/Workspace/php/cartsguru/src/Guru/Item.php on line 26
+[27-Jul-2017 08:45:37 America/New_York] PHP Stack trace:
+[27-Jul-2017 08:45:37 America/New_York] PHP   1. {main}() /usr/local/bin/boris:0
+[27-Jul-2017 08:45:37 America/New_York] PHP   2. require() /usr/local/bin/boris:10
+[27-Jul-2017 08:45:37 America/New_York] PHP   3. Boris\Boris->start() phar:///usr/local/bin/boris/bin/boris:15
+[27-Jul-2017 08:45:37 America/New_York] PHP   4. Boris\EvalWorker->start() phar:///usr/local/bin/boris/lib/Boris/Boris.php:171
+[27-Jul-2017 08:45:37 America/New_York] PHP   5. eval() phar:///usr/local/bin/boris/lib/Boris/EvalWorker.php:133
+[27-Jul-2017 08:45:37 America/New_York] PHP   6. include() phar:///usr/local/bin/boris/lib/Boris/EvalWorker.php(133) : eval()'d code:2
+[27-Jul-2017 08:45:59 America/New_York] PHP Fatal error:  Class 'Item' not found in phar:///usr/local/bin/boris/lib/Boris/EvalWorker.php(133) : eval()'d code on line 1
+[27-Jul-2017 08:45:59 America/New_York] PHP Stack trace:
+[27-Jul-2017 08:45:59 America/New_York] PHP   1. {main}() /usr/local/bin/boris:0
+[27-Jul-2017 08:45:59 America/New_York] PHP   2. require() /usr/local/bin/boris:10
+[27-Jul-2017 08:45:59 America/New_York] PHP   3. Boris\Boris->start() phar:///usr/local/bin/boris/bin/boris:15
+[27-Jul-2017 08:45:59 America/New_York] PHP   4. Boris\EvalWorker->start() phar:///usr/local/bin/boris/lib/Boris/Boris.php:171
+[27-Jul-2017 08:45:59 America/New_York] PHP   5. eval() phar:///usr/local/bin/boris/lib/Boris/EvalWorker.php:133
+[27-Jul-2017 08:49:16 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'Cannot assign properties directly' in /Volumes/Workspace/php/cartsguru/src/Guru/AbstractElement.php:64
+Stack trace:
+#0 phar:///usr/local/bin/boris/lib/Boris/EvalWorker.php(133) : eval()'d code(1): Guru\AbstractElement->__set('fuck', '')
+#1 phar:///usr/local/bin/boris/lib/Boris/EvalWorker.php(133): eval()
+#2 phar:///usr/local/bin/boris/lib/Boris/Boris.php(171): Boris\EvalWorker->start()
+#3 phar:///usr/local/bin/boris/bin/boris(15): Boris\Boris->start()
+#4 /usr/local/bin/boris(10): require('phar:///usr/loc...')
+#5 {main}
+  thrown in /Volumes/Workspace/php/cartsguru/src/Guru/AbstractElement.php on line 64
+[27-Jul-2017 08:49:25 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'Cannot assign properties directly' in /Volumes/Workspace/php/cartsguru/src/Guru/AbstractElement.php:64
+Stack trace:
+#0 phar:///usr/local/bin/boris/lib/Boris/EvalWorker.php(133) : eval()'d code(1): Guru\AbstractElement->__set('quantity', '')
+#1 phar:///usr/local/bin/boris/lib/Boris/EvalWorker.php(133): eval()
+#2 phar:///usr/local/bin/boris/lib/Boris/Boris.php(171): Boris\EvalWorker->start()
+#3 phar:///usr/local/bin/boris/bin/boris(15): Boris\Boris->start()
+#4 /usr/local/bin/boris(10): require('phar:///usr/loc...')
+#5 {main}
+  thrown in /Volumes/Workspace/php/cartsguru/src/Guru/AbstractElement.php on line 64
+[27-Jul-2017 08:49:42 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'Cannot assign properties directly' in /Volumes/Workspace/php/cartsguru/src/Guru/AbstractElement.php:64
+Stack trace:
+#0 /Volumes/Workspace/php/cartsguru/src/Guru/AbstractElement.php(55): Guru\AbstractElement->__set('fuckduck', 's')
+#1 phar:///usr/local/bin/boris/lib/Boris/EvalWorker.php(133) : eval()'d code(1): Guru\AbstractElement->__call('fuckduck', Array)
+#2 phar:///usr/local/bin/boris/lib/Boris/EvalWorker.php(133) : eval()'d code(1): Guru\Item->fuckduck('s')
+#3 phar:///usr/local/bin/boris/lib/Boris/EvalWorker.php(133): eval()
+#4 phar:///usr/local/bin/boris/lib/Boris/Boris.php(171): Boris\EvalWorker->start()
+#5 phar:///usr/local/bin/boris/bin/boris(15): Boris\Boris->start()
+#6 /usr/local/bin/boris(10): require('phar:///usr/loc...')
+#7 {main}
+  thrown in /Volumes/Workspace/php/cartsguru/src/Guru/AbstractElement.php on line 64
+[27-Jul-2017 09:04:16 America/New_York] PHP Fatal error:  Class 'Data' not found in phar:///usr/local/bin/boris/lib/Boris/EvalWorker.php(133) : eval()'d code on line 1
+[27-Jul-2017 09:04:16 America/New_York] PHP Stack trace:
+[27-Jul-2017 09:04:16 America/New_York] PHP   1. {main}() /usr/local/bin/boris:0
+[27-Jul-2017 09:04:16 America/New_York] PHP   2. require() /usr/local/bin/boris:10
+[27-Jul-2017 09:04:16 America/New_York] PHP   3. Boris\Boris->start() phar:///usr/local/bin/boris/bin/boris:15
+[27-Jul-2017 09:04:16 America/New_York] PHP   4. Boris\EvalWorker->start() phar:///usr/local/bin/boris/lib/Boris/Boris.php:171
+[27-Jul-2017 09:04:16 America/New_York] PHP   5. eval() phar:///usr/local/bin/boris/lib/Boris/EvalWorker.php:133
+[27-Jul-2017 09:04:28 America/New_York] PHP Notice:  Undefined property: Guru\Data::$blah in phar:///usr/local/bin/boris/lib/Boris/EvalWorker.php(133) : eval()'d code on line 1
+[27-Jul-2017 09:04:28 America/New_York] PHP Stack trace:
+[27-Jul-2017 09:04:28 America/New_York] PHP   1. {main}() /usr/local/bin/boris:0
+[27-Jul-2017 09:04:28 America/New_York] PHP   2. require() /usr/local/bin/boris:10
+[27-Jul-2017 09:04:28 America/New_York] PHP   3. Boris\Boris->start() phar:///usr/local/bin/boris/bin/boris:15
+[27-Jul-2017 09:04:28 America/New_York] PHP   4. Boris\EvalWorker->start() phar:///usr/local/bin/boris/lib/Boris/Boris.php:171
+[27-Jul-2017 09:04:28 America/New_York] PHP   5. eval() phar:///usr/local/bin/boris/lib/Boris/EvalWorker.php:133
+[27-Jul-2017 09:04:40 America/New_York] PHP Notice:  Undefined property: Guru\Data::$blah in phar:///usr/local/bin/boris/lib/Boris/EvalWorker.php(133) : eval()'d code on line 1
+[27-Jul-2017 09:04:40 America/New_York] PHP Stack trace:
+[27-Jul-2017 09:04:40 America/New_York] PHP   1. {main}() /usr/local/bin/boris:0
+[27-Jul-2017 09:04:40 America/New_York] PHP   2. require() /usr/local/bin/boris:10
+[27-Jul-2017 09:04:40 America/New_York] PHP   3. Boris\Boris->start() phar:///usr/local/bin/boris/bin/boris:15
+[27-Jul-2017 09:04:40 America/New_York] PHP   4. Boris\EvalWorker->start() phar:///usr/local/bin/boris/lib/Boris/Boris.php:171
+[27-Jul-2017 09:04:40 America/New_York] PHP   5. eval() phar:///usr/local/bin/boris/lib/Boris/EvalWorker.php:133
+[27-Jul-2017 09:05:11 America/New_York] PHP Notice:  Undefined property: Guru\Data::$blah in phar:///usr/local/bin/boris/lib/Boris/EvalWorker.php(133) : eval()'d code on line 1
+[27-Jul-2017 09:05:11 America/New_York] PHP Stack trace:
+[27-Jul-2017 09:05:11 America/New_York] PHP   1. {main}() /usr/local/bin/boris:0
+[27-Jul-2017 09:05:11 America/New_York] PHP   2. require() /usr/local/bin/boris:10
+[27-Jul-2017 09:05:11 America/New_York] PHP   3. Boris\Boris->start() phar:///usr/local/bin/boris/bin/boris:15
+[27-Jul-2017 09:05:11 America/New_York] PHP   4. Boris\EvalWorker->start() phar:///usr/local/bin/boris/lib/Boris/Boris.php:171
+[27-Jul-2017 09:05:11 America/New_York] PHP   5. eval() phar:///usr/local/bin/boris/lib/Boris/EvalWorker.php:133
